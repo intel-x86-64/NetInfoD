@@ -1,8 +1,7 @@
 #include "../include/FileReader.h"
-#include <iostream>
 
 bool FileReader::openFile(std::string filePath) {
-  std::ifstream file(filePath);
+  file.open(filePath);
 
   if (!file.is_open()) {
     std::cerr << "Error to open " << filePath << std::endl;
@@ -11,3 +10,5 @@ bool FileReader::openFile(std::string filePath) {
 
   return 0;
 }
+
+FileReader::~FileReader() { file.close(); }
