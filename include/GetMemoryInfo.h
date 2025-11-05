@@ -7,5 +7,5 @@ private:
   std::string buffer;
 
 public:
-  std::string getInfo() override {}
+  std::string getInfo() override;
 };
