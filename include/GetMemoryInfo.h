@@ -1,10 +1,11 @@
 #pragma once
+#include "FileReader.h"
 #include "IGetSystemInfo.h"
 #include <string>
 
 class GetMemoryInfo : public virtual IGetSystemInfo {
 private:
-  std::string buffer;
+  FileReader fileReader;
 
 public:
   std::string getInfo() override;
