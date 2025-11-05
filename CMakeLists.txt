@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(NetInfoDaemon src/main.cpp src/FileReader.cpp src/GetMemoryInfo.cpp)
+add_executable(NetInfoDaemon src/main.cpp src/FileReader.cpp src/GetMemoryInfo.cpp src/GetVersion.cpp)
