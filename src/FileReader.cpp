@@ -11,4 +11,16 @@ bool FileReader::openFile(std::string filePath) {
   return 0;
 }
 
+std::string FileReader::getFileContents() {
+  std::string buffer;
+  std::string line;
+
+  while (std::getline(file, line)) {
+    buffer += line;
+    buffer += "\n";
+  }
+
+  return buffer;
+}
+
 FileReader::~FileReader() { file.close(); }
