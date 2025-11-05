@@ -39,3 +39,29 @@
 
 # debug information files
 *.dwo
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/Makefile
+build/NetInfoDaemon
+.gitignore
+build/CMakeFiles/cmake.check_cache
+build/CMakeFiles/CMakeConfigureLog.yaml
+.gitignore
+build/CMakeFiles/CMakeDirectoryInformation.cmake
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/Makefile2
+build/CMakeFiles/progress.marks
+build/CMakeFiles/TargetDirectories.txt
+build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake
+build/CMakeFiles/3.31.6/CMakeDetermineCompilerABI_CXX.bin
+build/CMakeFiles/3.31.6/CMakeSystem.cmake
+build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp
+build/CMakeFiles/NetInfoDaemon.dir/build.make
+build/CMakeFiles/NetInfoDaemon.dir/cmake_clean.cmake
+build/CMakeFiles/NetInfoDaemon.dir/compiler_depend.make
+build/CMakeFiles/NetInfoDaemon.dir/compiler_depend.ts
+build/CMakeFiles/NetInfoDaemon.dir/depend.make
+build/CMakeFiles/NetInfoDaemon.dir/DependInfo.cmake
+build/CMakeFiles/NetInfoDaemon.dir/flags.make
+build/CMakeFiles/NetInfoDaemon.dir/link.txt
+build/CMakeFiles/NetInfoDaemon.dir/progress.make
