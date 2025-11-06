@@ -1,26 +1,22 @@
 #include "../include/FileReader.h"
+#include <sstream>
 
 bool FileReader::openFile(std::string filePath) {
   file.open(filePath);
 
   if (!file.is_open()) {
     std::cerr << "Error to open " << filePath << std::endl;
-    return 1;
+    return 0;
   }
 
-  return 0;
+  return 1;
 }
 
 std::string FileReader::getFileContents() {
-  std::string buffer;
-  std::string line;
+  std::ostringstream buffer;
+  buffer << file.rdbuf();
 
-  while (std::getline(file, line)) {
-    buffer += line;
-    buffer += "\n";
-  }
-
-  return buffer;
+  return buffer.str();
 }
 
 FileReader::~FileReader() { file.close(); }
