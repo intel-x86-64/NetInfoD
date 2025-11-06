@@ -1,6 +1,4 @@
 #include "../include/FileReader.h"
-#include <sstream>
-#include <stdexcept>
 
 void FileReader::openFile(std::string filePath) {
   file.open(filePath);
