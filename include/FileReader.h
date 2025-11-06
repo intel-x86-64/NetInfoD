@@ -9,7 +9,7 @@ private:
   std::ifstream file;
 
 public:
-  bool openFile(std::string filePath);
+  void openFile(std::string filePath);
   std::string getFileContents();
   ~FileReader();
 };

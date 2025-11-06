@@ -1,15 +1,13 @@
 #include "../include/FileReader.h"
 #include <sstream>
+#include <stdexcept>
 
-bool FileReader::openFile(std::string filePath) {
+void FileReader::openFile(std::string filePath) {
   file.open(filePath);
 
   if (!file.is_open()) {
-    std::cerr << "Error to open " << filePath << std::endl;
-    return 0;
+    throw std::runtime_error("Error to open " + filePath);
   }
-
-  return 1;
 }
 
 std::string FileReader::getFileContents() {
